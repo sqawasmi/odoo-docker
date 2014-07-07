@@ -16,8 +16,8 @@ RUN mkdir -p /var/log/supervisor
 
 RUN echo 'root:odoo' |chpasswd
 
-ADD openerp-server.conf /etc/openerp/openerp-server.conf
-ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+ADD files/openerp-server.conf /etc/openerp/openerp-server.conf
+ADD files/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 EXPOSE 22 8069
 CMD ["/usr/bin/supervisord"]

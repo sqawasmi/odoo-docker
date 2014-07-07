@@ -34,6 +34,6 @@ Built images are uploaded to [index.docker.io][1]
   [1]: https://index.docker.io/u/shaker/
   [2]: http://docs.docker.io/en/latest/ "docs.docker.io"
   [3]: http://127.0.0.1:8069/
-  [4]: https://registry.hub.docker.com/u/shaker/postgresql-docker/
+  [4]: https://registry.hub.docker.com/u/shaker/postgresql/
   [5]: https://docs.docker.com/userguide/dockerlinks/
   [6]: https://docs.docker.com/userguide/dockervolumes/

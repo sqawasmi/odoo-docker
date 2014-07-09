@@ -4,7 +4,7 @@ Docker build for Odoo (OpenERP)
 This repository provides Dockerfile for Odoo (formerly OpenERP) with SSH access.
 
 ### Status
-Odoo: 7
+Odoo: v7 and v8
 
 Ubuntu: 14.04
 
@@ -30,6 +30,7 @@ Built images are uploaded to [index.docker.io][1]
    - `docker stop odoo`
    - `docker start odoo`
  - ssh `root` password is `odoo` - you should change it if you exposed ssh port.
+ - Odoo `v8` is available uner `shaker/odoo:8` tag.
 
   [1]: https://index.docker.io/u/shaker/
   [2]: http://docs.docker.io/en/latest/ "docs.docker.io"

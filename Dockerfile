@@ -1,7 +1,7 @@
 FROM ubuntu:14.04
 MAINTAINER Shaker Qawasmi - github.com/sqawasmi 
 RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
-RUN echo deb http://nightly.odoo.com/7.0/nightly/deb/ ./ > /etc/apt/sources.list.d/openerp-70.list
+RUN echo deb http://nightly.odoo.com/trunk/nightly/deb/ ./ > /etc/apt/sources.list.d/openerp-80.list
 
 # Configure locale
 RUN locale-gen en_US.UTF-8 && update-locale
@@ -13,6 +13,8 @@ RUN apt-get install --allow-unauthenticated -y openssh-server supervisor openerp
 
 RUN mkdir -p /var/run/sshd
 RUN mkdir -p /var/log/supervisor
+RUN mkdir /home/openerp
+RUN chown openerp:openerp /home/openerp
 
 RUN echo 'root:odoo' |chpasswd
 

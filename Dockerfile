@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 MAINTAINER Shaker Qawasmi - github.com/sqawasmi 
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
+
 RUN echo deb http://nightly.odoo.com/7.0/nightly/deb/ ./ > /etc/apt/sources.list.d/openerp-70.list
 
 # Configure locale

@@ -9,7 +9,7 @@ RUN echo 'LANG="en_US.UTF-8"' > /etc/default/locale
 
 RUN apt-get update
 RUN apt-get upgrade -y
-RUN apt-get install --allow-unauthenticated -y openssh-server supervisor openerp
+RUN apt-get install --allow-unauthenticated -y openssh-server supervisor python-pybabel python-pydot graphviz python-matplotlib postgresql-client openerp
 
 RUN mkdir -p /var/run/sshd
 RUN mkdir -p /var/log/supervisor

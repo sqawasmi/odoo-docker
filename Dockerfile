@@ -11,7 +11,7 @@ RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectio
 RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install -y supervisor openssh-server
-RUN apt-get install --allow-unauthenticated -y openerp
+RUN alias adduser='useradd' && apt-get install --allow-unauthenticated -y openerp
 
 RUN mkdir -p /var/run/sshd
 RUN mkdir -p /var/log/supervisor
